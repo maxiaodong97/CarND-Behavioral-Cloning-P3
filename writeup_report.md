@@ -124,22 +124,20 @@ Non-trainable params: 0
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/center_lane_driving.jpg "center lane driving")
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![alt text]()
-![alt text][image4]
-![alt text][image5]
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/recover_left.jpg "recover left")
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/recover_right.jpg "recover right")
 
 Then I repeated this process on track two in order to get more data points.
+To augment the data sat, I also flipped images and angles thinking that this would eliminate the bias that in track one, we always circle anti-clockwise.
+For example, here is an image that has then been flipped:
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
 
-![alt text][image6]
-![alt text][image7]
 
-Etc ....
+
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 

@@ -61,7 +61,7 @@ def plotSomeSamples(X, y, start, end):
         plt.axis('off')
         plt.title("Angle (" + str(format(y[i], '.2f')) + ")")
         i += 1
-        plt.imshow(cv2.imread(image))
+        plt.imshow(cv2.cvtColor(cv2.imread(image), cv2.COLOR_BGR2RGB))
     plt.show()
 
 
@@ -216,3 +216,28 @@ model = nvidiaModel()
 # model.load_weights('model.h5')
 train(model)
 # model.save_model_to_file()
+
+
+def plotFlipped(i):
+    plt.figure(figsize=(20, 20))
+    plt.subplot(2, 2, 1)
+    plt.axis('off')
+    plt.title("Angle (" + str(format(y_train[i], '.2f')) + ")")
+    image = cv2.imread(X_train[i])
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.subplot(2, 2, 2)
+    plt.axis('off')
+    plt.title("Angle (" + str(format(-y_train[i], '.2f')) + ")")
+    image = cv2.imread(X_train[i])
+    plt.imshow(cv2.cvtColor(cv2.flip(image, 1), cv2.COLOR_BGR2RGB))
+    plt.show()
+
+
+plotFlipped(1)
+
+    plotSomeSamples(X_train, y_train, 0, 24)
+    histogram(y_train, "Steering angle", "count distribution",
+              "Training Set Steering Angle Distribution")
+    plotSomeSamples(X_valid, y_valid, 0, 24)
+    histogram(y_valid, "Steering angle", "count distribution",
+              "Validation Set Steering Angle Distribution")
