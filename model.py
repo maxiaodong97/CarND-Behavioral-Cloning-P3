@@ -213,6 +213,6 @@ def train(model):
 model = nvidiaModel()
 
 # load weigths from previous training result.
-model.load_weights('/Users/xma/sd/CarND-Behavioral-Cloning-P3/model.last.h5')
+# model.load_weights('model.h5')
 train(model)
-model.save_model_to_file()
+# model.save_model_to_file()
