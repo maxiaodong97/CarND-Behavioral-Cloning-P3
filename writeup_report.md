@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 #### 1. An appropriate model architecture has been employed
 
-My model use modified version of [nVidia CNN model](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). (model.py line 127-171)
+My model use modified version of [nVidia CNN model](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). ([model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py) line 127-171)
 
 Following is modified:
 1. Remove 1164 fully connected layer to increase the training speed.
@@ -27,13 +27,13 @@ Following is modified:
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 127-171).
-The model was trained and validated on different data sets to ensure that the model was not overfitting (model.py lines 199-210)
+The model contains dropout layers in order to reduce overfitting ([model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py) lines 127-171).
+The model was trained and validated on different data sets to ensure that the model was not overfitting ([model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py)lines 199-210)
 The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
-The model used an "adam" optimizer, so the learning rate was not tuned manually (model.py line 203).
+The model used an "adam" optimizer, so the learning rate was not tuned manually ([model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py) line 203).
 
 #### 4. Appropriate training data
 
@@ -126,7 +126,8 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/center_lane_driving.jpg "center lane driving")
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recover from edge position.
+These images show what a recovery looks like:
 
 ![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/recover_left.jpg "recover left")
 ![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/recover_right.jpg "recover right")
