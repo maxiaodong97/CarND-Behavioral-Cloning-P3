@@ -65,6 +65,9 @@ the weak spots, especially recover from left right to center.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
+I then tried to increase the speed by modify default speed in drive.py from 9 mph to 19 mph, then to 25 mph without leaving
+the road.
+
 #### 2. Final Model Architecture
 
 The final model architecture (model.py lines 127) consisted of a convolution neural network with the following layers and layer sizes
