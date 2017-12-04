@@ -10,8 +10,7 @@ Here is the list of file for submission:
 
 1. [model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py)
 2. [drive.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/drive.py)
-3. [model.json](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model_bc.json)
-4. [model.h5](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.h5)
-5. [writeup.md](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/writeup.md)
-6. [video.mp4](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/video.mp4)
+3. [model.h5](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.h5)
+4. [writeup_report.md](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/writeup_report.md)
+5. [video.mp4](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/video.mp4)
 
