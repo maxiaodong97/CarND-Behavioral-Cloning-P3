@@ -135,13 +135,45 @@ Then I repeated this process on track two in order to get more data points.
 To augment the data sat, I also flipped images and angles thinking that this would eliminate the bias that in track one, we always circle anti-clockwise.
 For example, here is an image that has then been flipped:
 
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/flipped.png "flipped")
 
+After the collection process, I had 5037 number of data points.  Here is some data samples plot.
 
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/training_sample.png "Training Samples")
 
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/training_angle_histogram.png" Training Angle Value Distribution")
 
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/validation_sample.png "Validation Samples")
 
+![alt text](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/validation_angle_histogram.png" Validation Angle Value Distribution")
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set.
+I then preprocessed this data by normalization and cropping before feeding to convolution layer.
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I finally randomly shuffled the data set and put 25% of the data into a validation set.
+
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 10 as evidenced by both training loss and validation loss stop decreasing. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+```python
+____________________________________________________________________________________________________
+Epoch 1/10
+3777/3777 [==============================] - 59s - loss: 0.0394 - val_loss: 0.0293
+Epoch 2/10
+3777/3777 [==============================] - 57s - loss: 0.0268 - val_loss: 0.0228
+Epoch 3/10
+3777/3777 [==============================] - 56s - loss: 0.0207 - val_loss: 0.0195
+Epoch 4/10
+3777/3777 [==============================] - 56s - loss: 0.0188 - val_loss: 0.0182
+Epoch 5/10
+3777/3777 [==============================] - 56s - loss: 0.0179 - val_loss: 0.0179
+Epoch 6/10
+3777/3777 [==============================] - 56s - loss: 0.0160 - val_loss: 0.0146
+Epoch 7/10
+3777/3777 [==============================] - 60s - loss: 0.0143 - val_loss: 0.0134
+Epoch 8/10
+3777/3777 [==============================] - 57s - loss: 0.0137 - val_loss: 0.0132
+Epoch 9/10
+3777/3777 [==============================] - 59s - loss: 0.0134 - val_loss: 0.0134
+Epoch 10/10
+3777/3777 [==============================] - 61s - loss: 0.0127 - val_loss: 0.0113
+
+```

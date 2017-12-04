@@ -233,11 +233,4 @@ def plotFlipped(i):
     plt.show()
 
 
-plotFlipped(1)
-
-    plotSomeSamples(X_train, y_train, 0, 24)
-    histogram(y_train, "Steering angle", "count distribution",
-              "Training Set Steering Angle Distribution")
-    plotSomeSamples(X_valid, y_valid, 0, 24)
-    histogram(y_valid, "Steering angle", "count distribution",
-              "Validation Set Steering Angle Distribution")
+plotFlipped(0)
