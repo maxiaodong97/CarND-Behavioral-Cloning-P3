@@ -5,7 +5,8 @@
 Overview
 ---
 
-This project will use CNN to clone driving behavior, here is the list of file for submission:
+This project will use CNN to clone driving behavior, X is a series of images, y is the steering angle. [Simulator](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58ae4594_mac-sim.app/mac-sim.app.zip) is used to collect data. 
+Here is the list of file for submission:
 
 1. [model.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.py)
 2. [drive.py](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/drive.py)
