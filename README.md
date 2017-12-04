@@ -13,5 +13,5 @@ Here is the list of file for submission:
 3. [model.h5](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/model.h5)
 4. [writeup_report.md](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/writeup_report.md)
 5. [video.mp4](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/video.mp4)
-[![video]](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/video.mp4)
+[![video](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/images/center_lane_driving.jpg)](https://github.com/maxiaodong97/CarND-Behavioral-Cloning-P3/blob/master/video.mp4)
 
